@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- -----jquery CDN------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Thời trang</title>
+    <script src="https://kit.fontawesome.com/070e2c9323.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('.tongge').click(function(){
+            $('.menu').slideToggle();
+        });
+    })
+</script>
+<body>
+    <header>
+        <P><i class="far fa-bookmark"></i>Welcome&nbsp;to Franco - an e-Commerce PSD Template!</P>
+        <div class="setting">
+            <p><i class="fas fa-cog"></i>shop setting</p>
+            <p id="lock"><i class="fas fa-lock"></i>Member login</p>
+        </div>
+    </header>
+    <nav>
+        <div class="logo"><a href="#"><img src="images/Logo1_03.jpg" alt=""></a></div>
+        <div class="tongge">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">COLLECTIONS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li id="fix1"><a href="#"><img src="images/search.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="Buy">
+            <a href="#"><img src="images/tym.png" alt=""></a>
+            <a id="car" href="#"><img src="images/car.png" alt=""></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="slide1">
+            <img src="images/Banner1.jpg" alt="">
+            <div class="abc">
+                <p>Two High-end Materials</p>
+                <a href="#">
+                    <button id="btnshop">shop now</button>
+                </a>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide2">
+                <img src="images/banner2.jpg" alt="">
+                <div class=slide4>
+                    <p>small&nbsp;thing</p>
+                    <h3>make different</h3>
+                </div>
+            </div>
+
+            <div class="slide3">
+                <img src="images/banner3.jpg" alt="">
+                <div class="slide5">
+                    <p>folio</p>
+                    <h3>Backpack</h3>
+                    <button id="btnShopnow">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="franco">
+        <p>franco</p>
+        <h2>featured items</h2>
+    </div>
+    <div class="ngh"></div>
+    <article>
+        <div class="list-view">
+            <div class="views1">
+                <img src="images/sp1.png" alt="">
+                <button id="btnadd1">add to cart</button>
+                <p>Suspendisse id volutpat</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1">
+                <img src="images/sp2.png" alt="">
+
+                <button id="btnadd1"> add to cart</button>
+                <p>Lorem ipsum dolor</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="Gray"> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1">
+                <img src="images/sp3.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Proin sed nulla mi</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1" id="fix">
+                <img src="images/sp4.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Aenean placerat</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </article>
+    <article>
+        <div class="list-view1">
+            <div class="views1">
+                <img src="images/sp5.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Suspendisse id volutpat</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1">
+                <img src="images/sp6.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Lorem ipsum dolor</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="Gray"> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1">
+                <img src="images/sp7.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Proin sed nulla mi</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+            <div class="views1" id="fix">
+                <img src="images/sp8.png" alt="">
+                <button id="btnadd1"> add to cart</button>
+                <p>Aenean placerat</p>
+                <ul>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                    <li id="yellow"> <i class="far fa-star"></i> </li>
+                </ul>
+                <div style="clear: both;"></div>
+                <div class="price">
+                    <strike>$99.00</strike>
+                    <strong>$84.00</strong>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </article>
+    <section>
+        <div class="new-title">
+            <p>Latest</p>
+            <h2>news & events</h2>
+            <hr>
+        </div>
+        <div class="contect">
+            <div class="slide-contect">
+                <div class="photo">
+                    <div class="anh">
+                        <img src="images/bg3.png" alt="">
+                    </div>
+                    <div class="small-photo">
+                        <div class="tool">
+                            <p>Jan</p>
+                            <h5>23</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <span><a href="#">In commodo dolor vitae</a></span>
+                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                        lacinia suscipit, orci mauris.</p>
+                </div>
+                <hr>
+                <div class="info">
+                    <div class="comment">
+                        <i class="far fa-comment"> 12</i>
+                    </div>
+                    <i class="far fa-heart"> 6</i>
+                </div>
+            </div>
+            <div class="slide-contect">
+                <div class="photo">
+                    <div class="anh">
+                        <img src="images/bg4.png" alt="">
+                    </div>
+                    <div class="small-photo">
+                        <div class="tool">
+                            <p>Jan</p>
+                            <h5>23</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <span><a href="#">Vivamus non dignissim elit</a></span>
+                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                        lacinia
+                        suscipit, orci mauris.</p>
+                </div>
+                <hr>
+                <div class="info">
+                    <div class="comment">
+                        <i class="far fa-comment"> 12</i>
+                    </div>
+                    <i class="far fa-heart"> 6</i>
+                </div>
+            </div>
+            <div class="slide-contect" id="fix6">
+                <div class="photo">
+                    <div class="anh">
+                        <img src="images/bg5.png" alt="">
+                    </div>
+                    <div class="small-photo">
+                        <div class="tool">
+                            <p>Jan</p>
+                            <h5>23</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <span id="f10"><a href="#">Ut lacinia erat ut diam volutpat</a></span>
+                    <p> Aliquam tempor sagittis neque,vel aliquam risus consectetur vel. &nbsp;&nbsp;Aenean hendrerit,
+                        elit a
+                        lacinia
+                        suscipit, orci mauris.</p>
+                </div>
+                <hr>
+                <div class="info">
+                    <div class="comment">
+                        <i class="far fa-comment"> 12</i>
+                    </div>
+                    <i class="far fa-heart"> 6</i>
+                </div>
+
+            </div>
+        </div>
+        <div class="load">
+            <i class="fas fa-circle"></i>
+            <div class="dot">
+                <i class="fas fa-circle"></i>
+            </div>
+            <i class="fas fa-circle"></i>
+        </div>
+
+    </section>
+    <footer>
+        <div class="about">
+            <div class="about-franco">
+                <h3>About Franco</h3>
+                <hr>
+                <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                    lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. </p>
+                <div class="icon">
+                    <img src="images/bird.jpg" alt="">
+                    <img src="images/in.jpg" alt="">
+                    <img id="img1" src="images/be.jpg" alt="">
+                    <img src="images/icon4.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-franco" id="francofix3">
+                <h3>Navigation</h3>
+                <hr>
+                <div class="menu">
+                    <div class="menu1">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu2">
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Featured Brands</a></li>
+                            <li><a href="#">Gift Vouchers</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Specials Gift</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+            <div class="about-franco" id="franco-fix">
+                <h3>Shop Location</h3>
+                <hr>
+                <ul>
+                    <li>
+                        <a href="#" id="diachi">
+                            <div><i class="far fa-map"></i></div>
+                            <div id="location">500 Hennessy Road <br> Causeway Bay, Hong Kong</div>
+                        </a>
+                    </li>
+                    <li><a href="#" id="diachi">
+                            <div><i id="icon2" class="fas fa-phone-alt"></i></div>
+                            <div id="location1">+1 23456789</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="diachi">
+                            <div class="dc3"><i id="icon3" class="far fa-envelope"></i></div>
+                            <div id="location2">contact@yourdomain.com</div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© Copyright 2015 & Made with <i class="fas fa-heart"></i> by <span>ArrowHitech.</span> </p>
+
+            <div class="payment">
+                <ul>
+                    <li id=""><i class="fab fa-cc-visa"></i></li>
+                    <li><i class="fab fa-cc-paypal"></i></li>
+                    <li><i class="fab fa-paypal"></i></li>
+                    <li><i class="fab fa-invision"></i></li>
+                    <li><i class="fab fa-cc-discover"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
