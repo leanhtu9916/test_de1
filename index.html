@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,45 +21,50 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- -----jquery CDN------------- -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Thời trang</title>
     <script src="https://kit.fontawesome.com/070e2c9323.js" crossorigin="anonymous"></script>
 </head>
 <script>
-    $(document).ready(function(){
-        $('.tongge').click(function(){
+    $(document).ready(function () {
+        $('.tongge').click(function () {
             $('.menu').slideToggle();
+            $('.Buy').slideToggle();
         });
     })
 </script>
+
 <body>
     <header>
         <P><i class="far fa-bookmark"></i>Welcome&nbsp;to Franco - an e-Commerce PSD Template!</P>
         <div class="setting">
-            <p><i class="fas fa-cog"></i>shop setting</p>
+            <span><i class="fas fa-cog"></i>shop setting</span>
             <p id="lock"><i class="fas fa-lock"></i>Member login</p>
         </div>
     </header>
     <nav>
-        <div class="logo"><a href="#"><img src="images/Logo1_03.jpg" alt=""></a></div>
-        <div class="tongge">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">WOMEN</a></li>
-                <li><a href="#">MEN</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">COLLECTIONS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li id="fix1"><a href="#"><img src="images/search.jpg" alt=""></a></li>
-            </ul>
-        </div>
-        <div class="Buy">
-            <a href="#"><img src="images/tym.png" alt=""></a>
-            <a id="car" href="#"><img src="images/car.png" alt=""></a>
+        <div class="menu-nav">
+            <div class="logo"><a href="#"><img src="images/Logo1_03.jpg" alt=""></a></div>
+            <div class="tongge">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">COLLECTIONS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li id="fix1"><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="Buy">
+                <a href="#"><img src="images/tym.png" alt=""></a>
+                <a id="car" href="#"><img src="images/car.png" alt=""></a>
+            </div>
         </div>
     </nav>
     <div class="container">
@@ -94,7 +100,7 @@
         <p>franco</p>
         <h2>featured items</h2>
     </div>
-    <div class="ngh"></div>
+
     <article>
         <div class="list-view">
             <div class="views1">
@@ -261,20 +267,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="description">
-                    <span><a href="#">In commodo dolor vitae</a></span>
-                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
-                        lacinia suscipit, orci mauris.</p>
+                <div class="des">
+                    <div class="description">
+                        <span><a href="#">In commodo dolor vitae</a></span>
+                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                            lacinia suscipit, orci mauris.</p>
+                    </div>
                 </div>
-                <hr>
+
                 <div class="info">
                     <div class="comment">
-                        <i class="far fa-comment"> 12</i>
+                        <i class="far fa-comment"></i><span>12</span>
                     </div>
-                    <i class="far fa-heart"> 6</i>
+                    <i class="far fa-heart"></i> <span>6</span>
                 </div>
             </div>
-            <div class="slide-contect">
+            <div class="slide-contect" id="fix5">
                 <div class="photo">
                     <div class="anh">
                         <img src="images/bg4.png" alt="">
@@ -286,18 +294,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="description">
-                    <span><a href="#">Vivamus non dignissim elit</a></span>
-                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
-                        lacinia
-                        suscipit, orci mauris.</p>
-                </div>
-                <hr>
-                <div class="info">
-                    <div class="comment">
-                        <i class="far fa-comment"> 12</i>
+                <div class="des">
+                    <div class="description">
+                        <span><a href="#">Vivamus non dignissim elit</a></span>
+                        <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                            lacinia
+                            suscipit, orci mauris.</p>
                     </div>
-                    <i class="far fa-heart"> 6</i>
+                </div>
+                <!-- <hr> -->
+                <div class="info" id="info1">
+                    <div class="comment">
+                        <i class="far fa-comment"></i> <span>12</span>
+                    </div>
+                    <i class="far fa-heart"></i> <span>6</span>
                 </div>
             </div>
             <div class="slide-contect" id="fix6">
@@ -312,23 +322,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="description">
-                    <span id="f10"><a href="#">Ut lacinia erat ut diam volutpat</a></span>
-                    <p> Aliquam tempor sagittis neque,vel aliquam risus consectetur vel. &nbsp;&nbsp;Aenean hendrerit,
-                        elit a
-                        lacinia
-                        suscipit, orci mauris.</p>
-                </div>
-                <hr>
-                <div class="info">
-                    <div class="comment">
-                        <i class="far fa-comment"> 12</i>
+                <div class="des">
+                    <div class="description">
+                        <span id="f10"><a href="#">Ut lacinia erat ut diam volutpat</a></span>
+                        <p> Aliquam tempor sagittis neque,vel aliquam risus consectetur vel. &nbsp;&nbsp;Aenean
+                            hendrerit,
+                            elit a
+                            lacinia
+                            suscipit, orci mauris.</p>
                     </div>
-                    <i class="far fa-heart"> 6</i>
+                </div>
+                <!-- <hr> -->
+                <div class="info" id="info1">
+                    <div class="comment">
+                        <i class="far fa-comment"></i> <span>12</span>
+                    </div>
+                    <i class="far fa-heart"></i> <span>6</span>
                 </div>
 
             </div>
         </div>
+        <div style="clear: both;"></div>
         <div class="load">
             <i class="fas fa-circle"></i>
             <div class="dot">
@@ -339,74 +353,76 @@
 
     </section>
     <footer>
-        <div class="about">
-            <div class="about-franco">
-                <h3>About Franco</h3>
-                <hr>
-                <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
-                    lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. </p>
-                <div class="icon">
-                    <img src="images/bird.jpg" alt="">
-                    <img src="images/in.jpg" alt="">
-                    <img id="img1" src="images/be.jpg" alt="">
-                    <img src="images/icon4.jpg" alt="">
-                </div>
-            </div>
-            <div class="about-franco" id="francofix3">
-                <h3>Navigation</h3>
-                <hr>
-                <div class="menu">
-                    <div class="menu1">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Our Blog</a></li>
-                            <li><a href="#">Women</a></li>
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+        <div class="footer1">
+            <div class="about">
+                <div class="about-franco" id="code1">
+                    <h3>About Franco</h3>
+                    <!-- <hr> -->
+                    <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a
+                        lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum. </p>
+                    <div class="icon">
+                        <img src="images/bird.jpg" alt="">
+                        <img src="images/in.jpg" alt="">
+                        <img id="img1" src="images/be.jpg" alt="">
+                        <img src="images/icon4.jpg" alt="">
                     </div>
-                    <div class="menu2">
-                        <ul>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Featured Brands</a></li>
-                            <li><a href="#">Gift Vouchers</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Specials Gift</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div style="clear: both;"></div>
                 </div>
-            </div>
-            <div class="about-franco" id="franco-fix">
-                <h3>Shop Location</h3>
-                <hr>
-                <ul>
-                    <li>
-                        <a href="#" id="diachi">
-                            <div><i class="far fa-map"></i></div>
-                            <div id="location">500 Hennessy Road <br> Causeway Bay, Hong Kong</div>
-                        </a>
-                    </li>
-                    <li><a href="#" id="diachi">
-                            <div><i id="icon2" class="fas fa-phone-alt"></i></div>
-                            <div id="location1">+1 23456789</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="diachi">
-                            <div class="dc3"><i id="icon3" class="far fa-envelope"></i></div>
-                            <div id="location2">contact@yourdomain.com</div>
-                        </a>
-                    </li>
-                </ul>
+                <div class="about-franco" id="francofix3">
+                    <h3>Navigation</h3>
+                    <!-- <hr> -->
+                    <div class="menu">
+                        <div class="menu1">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Blog</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu2">
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Featured Brands</a></li>
+                                <li><a href="#">Gift Vouchers</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Specials Gift</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div class="about-franco" id="franco-fix">
+                    <h3>Shop Location</h3>
+                   
+                    <ul>
+                        <li>
+                            <a href="#" id="diachi">
+                                <div><i class="far fa-map"></i></div>
+                                <div id="location">500 Hennessy Road <br> Causeway Bay, Hong Kong</div>
+                            </a>
+                        </li>
+                        <li><a href="#" id="diachi">
+                                <div><i id="icon2" class="fas fa-phone-alt"></i></div>
+                                <div id="location1">+1 23456789</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="diachi">
+                                <div class="dc3"><i id="icon3" class="far fa-envelope"></i></div>
+                                <div id="location2">contact@yourdomain .com</div>
+                            </a>
+                        </li>
+                    </ul>
 
 
+                </div>
+                <div style="clear: both;"></div>
             </div>
-            <div style="clear: both;"></div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div class="copyright">
             <p>© Copyright 2015 & Made with <i class="fas fa-heart"></i> by <span>ArrowHitech.</span> </p>
 

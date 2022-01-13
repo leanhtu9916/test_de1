@@ -9,6 +9,7 @@ header{
     color: #525252;
     line-height: 46px;
     padding: 0 30px;
+    max-width: 100%;
 }
 header p{
     display: inline-block;
@@ -20,30 +21,43 @@ header p{
 header p i{
     margin-right: 5px;
 }
+header .setting span {
+    text-transform:capitalize;
+    font-family: "Open sans";
+    font-size: 14.3px;
+}
+header .setting span i{
+    padding-right: 6px;
+}
 header #lock i{
     font-size: 12px;
-    margin-right: 9px
+    margin-right: 5px;
 
 }
 header .setting{
     float:right;
 }
 header .setting #lock{
-    margin-left: 24px;
+    margin-left: 25px;
 }
 header .setting p{
     text-transform:capitalize;
 }
 
 nav{
-    
-    height: 80px;
+    height: 79px;
     border-bottom: 1px solid #dddddd;
 }
+nav .menu-nav{
+    line-height: 30px;
+    padding-top: 19px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 nav .logo{
-    padding: 15px  30px;
+   
     display: inline-block;
-    line-height: 80px;
+    
     
 }
 nav .tongge{
@@ -57,13 +71,13 @@ nav .tongge{
     margin-left: 0px;
 }
 nav .logo img{
-    width: 200px;
+    max-width: 200px;
     height: 40px;
 }
 nav .menu{
     display: inline-block;
-    margin-left:277px;
-    line-height: 34px;
+    margin-left:307px;
+    line-height: 40px;
 }
 nav .menu ul li{
     float: left;
@@ -75,8 +89,7 @@ nav .menu ul li a{
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    color: #000000;   
-    
+    color: #000;
 }
 #fix1{
     margin-top: 3px;
@@ -89,39 +102,39 @@ nav .menu ul a:hover{
 }
 nav .Buy{
     float:right;
-    line-height: 34px;
-    padding-top: 25px;
+    
+    padding-top: 6px;
 }
 nav .Buy #car{
-    padding:0 29px;
+    padding-left: 25px;
 }
 
 .container{
-    width: 1140px;
+    max-width: 1140px;
     margin:30px auto;
     display:flex;
     
 }
 .container .slide1{
-    width: 750px;
+    max-width: 750px;
     position: relative;
 }
 .container .slide1 img{
-    width: 750px;
+    max-width: 750px;
     height: 560px;
     
 }
 .container .slide{
-    width: 360px;
+    max-width: 360px;
     margin-left: 30px;
 }
 .container .slide .slide2 img{
-    width: 360px;
+    max-width: 360px;
     height: 200px;
     margin-bottom: 26px;
 }
 .container .slide .slide3 img{
-    width: 360px;
+    max-width: 360px;
     height: 330px;
     
 }
@@ -137,18 +150,18 @@ nav .Buy #car{
 }
 .container .slide1 #btnshop{
     text-transform:capitalize;
-    width: 103px;
+    width: 106px;
     height: 40px;
     background-color: #8262b5;
     color: #fff;
     float: right;
-    margin-top: 5px;
+    margin-top: 2px;
     cursor: pointer;
-    
+    border: none;
 }
 .container .slide .slide2 .slide4{
     position: absolute;
-    top:83px ;
+    top:85px ;
     right: 115px;
 }
 .container .slide .slide2 .slide3 {
@@ -157,11 +170,12 @@ nav .Buy #car{
 .container .slide .slide2 p{
     /* font-weight:bold; */
     text-transform:uppercase;
-    font-size: 17px;
+    font-size: 16px;
     color:#616161;
     margin-bottom: 1px;
-    letter-spacing: 2.5px; /* Khoảng cách giữa các chữ */
-    margin-left: 1.5px      
+    letter-spacing: 3.2px; /* Khoảng cách giữa các chữ */
+    margin-left: 1.5px;    
+    font-weight: 400;
 }
 .container .slide .slide2{
     position: relative;
@@ -177,16 +191,17 @@ nav .Buy #car{
 }
 .container .slide .slide3 .slide5{
     position:absolute;
-    top: 118px;
+    top: 120px;
     right: 205px;
 }
 .container .slide .slide3 .slide5 p{
     /* font-weight: bold; */
     text-transform: uppercase;
-    color:#696969;
-    letter-spacing:3px;
-    font-size: 17px;
+    color:#616161;
+    letter-spacing:3.4px;
+    font-size: 16px;
     margin-left: -2px;
+    font-weight: 400;
 }
 .container .slide .slide3 .slide5 h3{
     text-transform: uppercase;
@@ -196,7 +211,7 @@ nav .Buy #car{
     
 }
 .container .slide .slide3 .slide5 #btnShopnow{
-    width: 108px;
+    width: 107px;
     height: 40px;
     background-color:#8262b5;
     color: #fff;
@@ -204,14 +219,15 @@ nav .Buy #car{
     margin-top: 16px;
     margin-left: 4px;
     cursor: pointer;
+    border: none;
 }
 article{
-    width: 1140px;
+    max-width: 1140px;
   
     margin: 0 auto;
 }
 .franco{
-    width: 1140px;
+    max-width: 1140px;
     margin:30px auto;
     margin-top: 71px;
 }
@@ -225,11 +241,11 @@ article{
 
 }
 .franco h2{
-    font-size: 25px;
+    font-size: 24px;
     text-transform:uppercase;
     font-weight: 800;
-    padding-top: 10px;
-    letter-spacing:1.6px;
+    padding-top: 12px;
+    letter-spacing:2.3px;
     margin-left: -3px;
 }
 /* .franco hr{
@@ -242,9 +258,9 @@ article{
 .franco::after{
     content: '';
     display: block;
-    width: 50px;
+    max-width: 50px;
     height: 1px;
-    margin-top: 22px;
+    margin-top: 23px;
     background-color: #8262b5;
 }
 
@@ -256,13 +272,13 @@ article .list-view{
     margin-top: 50px;
 }
 article .list-view .views1{
-    width: 261px;
+    max-width: 261px;
     float: left;
     margin-right:32px;
     position: relative;  /* Chỉ định lớp cha */
 }
 article .list-view1 .views1{
-    width: 261px;
+    max-width: 261px;
     float: left;
     margin-right:32px;
     position: relative;  /* Chỉ định lớp cha */
@@ -397,13 +413,13 @@ section .new-title h2{
     margin-left: -4px;  
 }
 section .new-title hr{
-    width:49px;
+    max-width:49px;
     display: inline-block;  /* các items sẽ được xếp cùng nhau trên một dòng */
     background-color: #8262b5;
     margin-left: -6px;
 }
 .contect{
-    width: 1140px;
+    max-width: 1140px;
     height: 390px;
     margin:45px auto;
 }
@@ -411,7 +427,7 @@ section .new-title hr{
     margin-bottom: 0;
 }
 .contect .slide-contect{
-    width: 360px;
+    max-width: 360px;
     height: 390px;
     float: left;
     margin-right: 30px;
@@ -422,7 +438,7 @@ section .new-title hr{
     margin-right: 0;
 }
 .contect .slide-contect .photo{
-    width: 360px;
+    max-width: 360px;
     height: 200px;
     position: relative;
 }
@@ -450,16 +466,24 @@ section .new-title hr{
 .contect .slide-contect .description span a{
     font-weight: 600;
     text-decoration:none;
-    color: #000;
-    font-size: 17px;
+    color: #111111;
+    font-size: 16px;
     margin-left: -2px;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.3px;
 }
 .contect .slide-contect .description span:hover a{
     color: #8a6cba;
 }
 .contect .slide-contect .description{
-    margin: 16px 18px 20px 20px;
+    margin: 18px 18px -4px 20px;
+}
+.contect .slide-contect .des::after{
+    content: '';
+    display: block;
+    margin-top: 12px;
+    /* max-width: 50px; */
+    height: 1px;
+    background-color: #ededed;
 }
 .contect .slide-contect .description p{
     margin-top: 17px;
@@ -470,6 +494,7 @@ section .new-title hr{
     font-weight: 600;
     line-height: 22px;
     margin-left: -1px;
+    color: #424242;
 }
 .contect .slide-contect .description #f10 a{
     margin-left: -3px;
@@ -478,21 +503,37 @@ section .new-title hr{
     color: #9377bf;
 }
 .contect .slide-contect .info .comment{
-    margin-right: 29px;
+    margin-right: 32px;
     float: left;
 }
 .contect .slide-contect .info .comment i{
     color: #d1d1d1;
+    font-size: 14px;
+    margin-right: 4px;
 }
-.contect .slide-contect .info i{
+.contect .slide-contect .info  i{
     color: #d1d1d1;
+    font-size: 14px;
+}
+.contect .slide-contect .info .comment span{
+    color: #d1d1d1;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+.contect .slide-contect .info span{
+    color: #d1d1d1;
+    font-size: 14px;
+    font-family: "Open Sans";
 }
 .contect .slide-contect .info{
-    padding:11px 19px;
+    padding:17px 19px;
+}
+.contect .slide-contect #info1{
+    padding-left: 17px;
 }
 .contect .slide-contect hr{
     background-color: #d1d1d1;
-    height: 1px;
+   
 }
 section .load{
     
@@ -524,18 +565,26 @@ footer .about{
     height: 279px;
     padding-top: 61px;
     margin:0 auto;
-    width: 1140px;
-    border-bottom: 1px solid #9d9c9c;
+    max-width: 1140px;
+    
+}
+footer .footer1::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #393939;
+    margin-top: 7px;
 }
 footer .about .about-franco{
-    width: 22.7%;
+    max-width: 22.7%;
     float: left;
     margin-right: 128px;
 }
 footer .about #francofix3{
-    width: 29%;
+    max-width: 29%;
     margin-right: 160px;
 }
+
 footer .about .about-franco h3{
     color: #fff;
     font-weight: 500;
@@ -543,6 +592,14 @@ footer .about .about-franco h3{
     font-size: 16px;
     margin-top: -1px;
 }
+footer .about .about-franco h3::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #393939;
+    margin:25px auto;
+}
+
 footer .about #francofix3 h3{
     margin-left: 2px;
 }
@@ -551,10 +608,10 @@ footer .about .about-franco hr{
     margin-bottom: 22px;
     background-color: #393939;
     margin-left: -1px;
-    width: 260px;
+    max-width: 260px;
 }
 footer .about #francofix3 hr{
-    width: 118%;
+    max-width: 118%;
 }
 footer .about .about-franco p{
     color: #9d9c9c;
@@ -569,13 +626,13 @@ footer .about .about-franco .icon{
     letter-spacing: 21px;
 }
 footer .about .about-franco .icon img{
-    width: 19px;
+    max-width: 19px;
     height: 17px;
 }
 footer .about .about-franco .icon #img1{
     margin-left: 1px;
     height: 17px;
-    width: 26px;
+    max-width: 26px;
 }
 #franco-fix{
     margin-right: 0;
@@ -603,11 +660,12 @@ footer .about .about-franco .menu .menu2 ul li a:hover{
 }
 footer .about .about-franco .menu1{
     float: left;
-    margin-right: 122px;
-    margin-top: -3px;
+    margin-right: 123px;
+    margin-top: -1px;
 }
 footer .about #francofix3 .menu2{
     margin-top: -1px;
+    float: right;
 }
 footer .about .about-franco .menu .menu1 ul{
     line-height: 29px;
@@ -683,9 +741,9 @@ footer .about hr{
     width: 100%;
 }
 footer .copyright{
-    width: 1140px;
+    max-width: 1140px;
     
-    margin:28px auto;
+    margin:23px auto;
     background-color: #222222;
 }
 footer .copyright p i{
@@ -726,19 +784,63 @@ footer .copyright p span{
     nav .menu ul li{
         padding-right: 40px;
     }
-
+  
 }
+@media only screen and (max-width: 1547px ){
+    nav .menu ul li{
+        margin-left: -25px;
+    }
+}
+@media only screen and (max-width: 1440px ){
+    /* .container .slide1{
+        max-width: 564px;
+    }
+    .container .slide{
+        padding-left: 71px;
+    } */
+}
+@media only screen and (max-width: 1294px){
+    nav .menu{
+        margin-left: 0;
+    }
+    nav .menu ul li a{
+        padding-right: 0px;
 
-@media only screen and (max-width: 768px){
-    nav{
+    }
+    nav .menu ul li{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 1142px){
+    .container{
+        display: block;
+        
+    }
+    .container .slide{
+        display: flex;
+        padding-left: 14%;
+    }
+    .container .slide1{
+        margin: 0 auto;
+        max-width: 713px;
+    }
+    .container .slide .slide3 img{
+        height: 200px;
+    }
+    .container .slide .slide3 .slide5{
+        top: 48px;
+        right: 94px;
+    }
+    nav .menu-nav{
         display: flex;
     }
-    nav .tongge{
+    nav .menu-nav .tongge{
         display: inline-block;
+        line-height: 40px;
     }
-    nav .menu{
+    /* nav .menu{
         display: none;
-    }
+    } */
     nav .logo{
         order:2;
         flex-grow: 1;
@@ -746,11 +848,397 @@ footer .copyright p span{
     }
     nav .tongge{
         order: 1;
-        
     }
     nav .Buy{
         order: 3;
     }
-
+    nav .menu{
+        float: none;
+        z-index: 1000;    /* độ ưu tiên */
+    }
+    nav .menu ul li{
+        float: none;
+    }
+    .franco::after{
+        margin: 22px auto;
+        max-width: 335px;
+    }
+    .franco{
+        text-align: center;
+    }
+    article{
+        max-width: 586px;
+    }
+    .container .slide1 img{
+        height: 431px;
+    }
+    .container .slide1 .abc{
+        left: 245px;
+    }
+    /* .contect .slide-contect{
+        float: none;
+    } */
+    .contect  #fix6{
+        display: none;
+    }
+    .contect{
+        max-width: 780px;
+    }
+    footer .about .about-franco{
+        max-width: 18.7%;
+        margin-right: 10px;
+    }
+    footer .copyright .payment ul{
+        float: none;
+    }
+    footer .about #francofix3{
+        margin-right: 10px;
+    }
+    footer .about .about-franco .menu1{
+        margin-right: 6px;
+    }
+    footer{
+        height: 486px;
+    }
+    footer .about{
+        height: 365px;
+        display: flex;
+        justify-content: center;
+    }
 }
+@media only screen and (max-width: 1024px){
+    .container .slide1{
+        max-width: 609px;
+    }
+    .container .slide{
+        padding-left: 178px;
+    }
+}
+@media only screen and (max-width: 780px){
+    .contect #fix5{
+        display: none;
+    }
+    .contect{
+        max-width: 48%;
+    }
+    .container .slide{
+        padding-left:0;
+    }
+    .container .slide1{
+        max-width: 651px;
+    }
+  
+    .about #code1{
+        display: none;
+    }
+    .about #franco-fix{
+        position: absolute;
+        right: 112px
+    }
+    footer .about .about-franco{
+        /* max-width:0; */
+        float: none;
+    }
+    footer .about{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 65px;
+    
+    }
+    footer{
+        position: relative;
+        height: 542px;
+    }
+    footer .about #francofix3{
+        position: absolute;
+        left: 73px;
+    }
+}
+@media only screen and (max-width: 768px){
 
+    .container .slide1{
+        max-width: 587px;
+    }
+    .container .slide{
+        margin-left: 90px;
+    }
+
+    .container .slide1{
+    max-width: 587px;
+    }
+}
+@media only screen and (max-width: 667px){
+    header .setting span{
+        left: 0;
+        font-size: 10px;
+    }
+    body header p{
+        overflow: hidden;
+        font-size: 10px;
+    }
+    body header{
+        padding: 0;
+    }
+    header .setting{
+        position: relative;
+    }
+    header .setting span{
+        position: absolute;
+        left: -54px;
+        font-size: 9px;
+    }
+    header .setting #lock{
+        font-size: 10px;
+    }
+    header p{
+        font-size: 9px;
+    }
+    header #lock i{
+        font-size: 9px;
+    }
+    .container .slide{
+        margin-left:161px;
+        display: block;
+    }
+    nav .Buy{
+        margin-right: -123px;
+    }
+    .container .slide1{
+        max-width: 344px;
+        
+    }
+    .container .slide1 img{
+        height: 268px;
+    }
+    .container .slide1 .abc{
+        left: 199px;
+        top: 120px;
+        
+    }
+    .container .slide1 p{
+        font-size: 21px;
+    }
+    .container .slide1 #btnshop{
+        width: 90px;
+        height: 35px;
+        margin-right: 44px;
+
+    }
+    .container .slide .slide3 img{
+        height: 330px;
+    }
+    .container .slide .slide2 img{
+        margin-bottom:0;
+    }
+    article .list-view .views1 img{
+        max-width: 184px;
+    }
+    article .list-view .views1 #btnadd1{
+        left: 71px;
+        top: 185px;
+        width: 99px;
+        height: 36px;
+    }
+    article .list-view .views1{
+        margin-right: 7px;
+    }
+    article{
+        max-width: 382px;
+    }
+    article .list-view1 .views1{
+        margin-right: 7px;
+    }
+    article .list-view1 .views1 img{
+        max-width: 184px;
+    }
+    article .list-view1 .views1 #btnadd1{
+        left: 71px;
+        top: 185px;
+        width: 99px;
+        height: 36px;
+    }
+    footer .about #francofix3{
+        left: 16px;
+    }
+    .about #franco-fix{
+        right: 187px;
+        margin-top: -19px;
+    }
+    .contect{
+        max-width: 77%;
+    }
+    nav .Buy #car{
+        padding-left:0;
+    }
+    section .new-title .contect .slide-contect .photo .anh img{
+        max-width: 282px;
+    }
+}
+@media only screen and (max-width: 517px){
+    .container .slide{
+    margin-left: 35px;
+    }
+    section .new-title .contect .slide-contect .photo .anh img{
+        max-width: 282px;
+    }
+    .contect{
+        max-width: 81%;
+    }
+    .contect .slide-contect{
+        height: 401px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .about .menu .menu2{
+        display: none;
+    }
+    footer{
+        height: 563px;  
+    }
+    footer .copyright{
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    footer .copyright .payment{
+        margin:0 auto;
+    }
+    nav .menu-nav{
+        
+    }
+    nav .logo{
+        margin-left: 43%;
+    }
+    .container .slide{
+        margin-left: 41px;
+    }
+    nav .menu ul li{
+        padding-right:0;
+    }
+    nav .logo img{
+        max-width: 127px;
+        height: 33px;
+    }
+    nav .Buy{
+        order: 1;
+        margin-right:0;
+    }
+    nav .tongge{
+        order: 2;
+    }
+    nav .logo{
+        order: 3;
+    }
+    header .setting{
+        left: 54px;
+    }
+    body header{
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+    }
+    header .setting span{
+        left: 0;
+        font-size: 10px;
+    }
+    header .setting{
+        left: 0;
+    }
+    header .setting #lock{
+        margin-left: 82px;
+    }
+}
+    @media only screen and (max-width: 375px){
+        .container .slide .slide2 img{
+            max-width: 299px;
+            height: 167px;
+        }
+        .container .slide .slide3 img{
+            max-width: 300px;
+            height: 330px;
+        }
+        .container .slide1{
+            max-width: 288px;
+        }
+        .container .slide1 img{
+            height: 236px;
+            max-width: 297px;
+        }
+        .container .slide1 .abc{
+            left: 165px;
+        }
+        .container .slide1 #btnshop{
+            width: 80px;
+            height: 29px;
+        }
+        section  img{
+            max-width: 285px;
+        }
+        .contect{
+            max-width: 71%;
+
+        }
+        body header{
+            line-height: 23px;
+        }
+        header .setting span{
+            left:0;
+        }
+        header .setting{
+            left:0;
+        }
+        header .setting #lock{
+            margin-left: 72px;
+        }
+        nav .logo{
+            margin-left: 11%;
+        }
+        article .list-view .views1 img{
+            max-width: 112px;
+        }
+        article .list-view .views1 #btnadd1{
+            left: 39px;
+            top: 114px;
+            width: 63px;
+            height: 20px;
+            font-size: 9px;
+        }
+        article .list-view .views1{
+            max-width: 111px;
+        }
+        article{
+            max-width: 248px;
+        }
+        article .list-view1 .views1 img{
+            max-width: 112px;
+        }
+        article .list-view1 .views1 #btnadd1{
+            left: 39px;
+            top: 114px;
+            width: 63px;
+            height: 20px;
+            font-size: 9px;
+        }
+        article .list-view1 .views1{
+            max-width: 111px;
+        }
+}
+@media only screen and (max-width: 320px){
+    .container .slide{
+        margin-left: 16px;
+    }
+    article{
+        max-width: 236px;
+    }
+    section img{
+        max-width: 231px;
+    }
+    .contect .slide-contect{
+        height: 421px;
+    }
+    .about #franco-fix{
+        right: 118px;
+    }   
+    footer .copyright p{
+        font-size: 13px;
+    }
+}
