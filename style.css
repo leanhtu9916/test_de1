@@ -91,9 +91,50 @@ nav .menu ul li a{
     font-weight: 700;
     color: #000;
 }
-#fix1{
-    margin-top: 3px;
-    margin-left: -2px;
+.menu .search{
+    width: 30px;
+    height: 30px;
+    background-color:#fff;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 60px;
+    margin-left: -7px;
+    margin-top: 5px;
+}
+.menu .search.active{
+    width: 300px;
+}
+.menu .search .input{
+    position: relative;
+    width: 269px;
+    height: 30px;
+    left: 27px;
+    display: none;
+}
+.menu .search .input.active-input1{
+    display: block;
+}
+.menu .search .input input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 60px;
+    /* top: 0; */
+    border: none;
+    outline: none;
+    padding: 0px 2px;
+    font-size: 14px;
+}
+.menu .search .input input.active-input{
+    display: block;
+}
+.menu .search .icon i{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    /* background-color: #000; */
+    color: #000;
+    cursor: pointer;
 }
 nav .menu ul a:hover{
     color: #8262b5;
@@ -422,6 +463,7 @@ section .new-title hr{
     max-width: 1140px;
     height: 390px;
     margin:45px auto;
+    
 }
 .contect{
     margin-bottom: 0;
@@ -584,6 +626,24 @@ footer .about #francofix3{
     max-width: 29%;
     margin-right: 160px;
 }
+/* .banner-item{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background: blue;
+    font-size: 50px;
+}
+.banner-item.mobile{
+    display: none;
+}
+@media only screen and (max-width: 425px){
+    .banner-item.mobile{
+        display: block;
+    }
+    .banner-item.desktop{
+        display: none;
+    }
+} */
 
 footer .about .about-franco h3{
     color: #fff;
@@ -778,26 +838,53 @@ footer .copyright p span{
     font-size: 14px;
     font-weight: 500;
 }
+.slick-track{
+    width: 0;
+}
 
+.contect #fix5{
+    margin-left: 10px;
+}
+.contect #fix6{
+    margin-left: 20px;
+}
+@media only screen and (min-width: 1920px){
+    .container .prev, .container .next{
+        display: none;
+    }
+ 
+}
 @media only screen and (max-width: 1920px){
 
     nav .menu ul li{
         padding-right: 40px;
     }
+    nav .menu{
+        margin-left: 202px;
+    }
+    .container .prev, .container .next{
+        display: none;
+    }
+ 
+ 
   
+}
+@media only screen and (max-width: 1706px ){
+    nav .menu{
+        margin-left: 150px;
+    }
 }
 @media only screen and (max-width: 1547px ){
     nav .menu ul li{
         margin-left: -25px;
     }
 }
-@media only screen and (max-width: 1440px ){
-    /* .container .slide1{
-        max-width: 564px;
+
+@media only screen and (max-width: 1366px){
+  
+    nav .menu{
+        margin-left: 151px;
     }
-    .container .slide{
-        padding-left: 71px;
-    } */
 }
 @media only screen and (max-width: 1294px){
     nav .menu{
@@ -811,32 +898,79 @@ footer .copyright p span{
         margin-left: 0;
     }
 }
-@media only screen and (max-width: 1142px){
+@media only screen and (max-width: 1143px){
     .container{
         display: block;
-        
+        max-width: 100%;
+        position: relative;
+    }
+    
+    .contect #fix5{
+        margin-left: 0;
+    }
+    .contect #fix6{
+        margin-left: 0;
+    }
+    .fade{
+        display: none;
+    }
+    .container .prev, .container .next{
+        display: block;
+    }
+    .menu .search .input input{
+        width: 51%;
+    }
+    .menu .search.active{
+        width: 120px;
     }
     .container .slide{
-        display: flex;
-        padding-left: 14%;
+        
+        padding-left: 3%;
+        max-width: 1010px
     }
     .container .slide1{
         margin: 0 auto;
-        max-width: 713px;
+        max-width: 682px;
     }
     .container .slide .slide3 img{
-        height: 200px;
+        height: 501px;
+        left: 0;
+        max-width: 463px;
     }
     .container .slide .slide3 .slide5{
-        top: 48px;
-        right: 94px;
+        top: 244px;
+        left: 94px;
+    }
+    .container .slide .slide2 img{
+        max-width: 534px;
+        height: 501px;
+        margin-bottom: 26px;
+        position: absolute;
+        right: 0;
+    }
+    article .list-view .views1{
+        margin-right: 0;
+    }
+  
+    .slick-next:before, .slick-prev:before{
+        color: #090909;
+    }
+    .container .slide .slide2{
+        position: relative;
+    }
+    .container .slide .slide3{
+        position: relative;
     }
     nav .menu-nav{
         display: flex;
     }
+    nav .menu{
+        /* display: none; */
+    }
     nav .menu-nav .tongge{
         display: inline-block;
         line-height: 40px;
+        margin-left: 16px;
     }
     /* nav .menu{
         display: none;
@@ -852,13 +986,47 @@ footer .copyright p span{
     nav .Buy{
         order: 3;
     }
-    nav .menu{
+    nav .menu-nav{
         float: none;
-        z-index: 1000;    /* độ ưu tiên */
+        z-index: 10;    /* độ ưu tiên */
+        position: fixed;
+        width: 100%;
+       
+        
     }
+    .menu-nav .menu ul{
+        background-color: #2f3640;
+        position: fixed;
+        width: 100%;
+        /* height: 100vh; */
+        top: 124px;
+        z-index: 1;
+        text-align: center;
+        transition: all 5s;
+        display: none;
+    }
+    .menu-nav .menu ul.show{
+        left: 0;
+        display: block;
+        
+    }
+    nav .menu-nav ul #f7{
+        display: inline-block;
+        align-items: center;
+    }
+    nav .menu-nav{
+        padding-left:0;
+    }
+  
     nav .menu ul li{
         float: none;
     }
+    .container .slide .slide2 .slide4{
+        position: absolute;
+        top: 236px;
+        right: 279px;
+    }
+    
     .franco::after{
         margin: 22px auto;
         max-width: 335px;
@@ -867,22 +1035,30 @@ footer .copyright p span{
         text-align: center;
     }
     article{
-        max-width: 586px;
+        max-width: 543px;
     }
     .container .slide1 img{
-        height: 431px;
+        height: 502px;
+        max-width: 721px;
+        
     }
     .container .slide1 .abc{
-        left: 245px;
+        left: 303px;
     }
     /* .contect .slide-contect{
         float: none;
     } */
     .contect  #fix6{
-        display: none;
+        /* display: none; */
     }
     .contect{
-        max-width: 780px;
+        max-width: 365px;
+    }
+    .contect #fix6{
+        margin-right: 30px;
+    }
+    .contect .slide-contect{
+        height: 402px;
     }
     footer .about .about-franco{
         max-width: 18.7%;
@@ -905,13 +1081,86 @@ footer .copyright p span{
         display: flex;
         justify-content: center;
     }
+    .prev,.next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .container {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .container .prev:hover,.container .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+      
+      @-webkit-keyframes fade {
+        from {opacity: .1}
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .9}
+        to {opacity: 1}
+      }
+      
 }
 @media only screen and (max-width: 1024px){
     .container .slide1{
-        max-width: 609px;
+        max-width: 504px;
+    }
+    .container .slide1 img{
+        height: 372px;
+        max-width: 548px;
+        position: relative;
+    }
+    .container .slide1 .abc{
+        left: 240px;
+        top: 180px;
+    }
+    .container .slide1 #btnshop{
+        position: absolute;
     }
     .container .slide{
-        padding-left: 178px;
+        padding-left: 0;
+    }
+    .container .slide .slide2 img{
+        max-width: 512px;
+        height: 372px;
+        right: 42px;
+      
+    }
+    .container .slide .slide2 .slide4{
+        top: 204px;
+        right: 309px;
+    }
+    .container .slide .slide3 img{
+        height: 372px;
+        left: 0px;
+        max-width: 434px;
+    }
+    .container .slide .slide3 .slide5{
+        top: 209px;
+        left: 43px;
     }
 }
 @media only screen and (max-width: 780px){
@@ -957,14 +1206,44 @@ footer .copyright p span{
 @media only screen and (max-width: 768px){
 
     .container .slide1{
-        max-width: 587px;
+        max-width: 521px;
     }
     .container .slide{
         margin-left: 90px;
     }
 
     .container .slide1{
-    max-width: 587px;
+    max-width: 348px;
+    }
+    .container .slide1 p{
+        font-size: 20px;
+    }
+    .container .slide .slide2 img{
+        
+    max-width: 341px;
+    height: 261px;
+    right: 42px;
+
+    }
+    .container .slide .slide2 .slide4{
+        top: 159px;
+        right: 157px;
+    }
+    .container .slide .slide3 img{
+        height: 261px;
+        left: 0px;
+        max-width: 434px;
+    }
+    .container .slide .slide3 .slide5{
+        top: 129px;
+        left: 28px;
+    }
+    .container .slide1 img{
+        height: 261px;
+    }
+    .container .slide1 .abc{
+        left: 185px;
+        top: 126px;
     }
 }
 @media only screen and (max-width: 667px){
@@ -1043,7 +1322,7 @@ footer .copyright p span{
         margin-right: 7px;
     }
     article{
-        max-width: 382px;
+        max-width: 367px;
     }
     article .list-view1 .views1{
         margin-right: 7px;
@@ -1109,7 +1388,7 @@ footer .copyright p span{
         margin-left: 43%;
     }
     .container .slide{
-        margin-left: 41px;
+        margin-left: 88px;
     }
     nav .menu ul li{
         padding-right:0;
@@ -1121,6 +1400,7 @@ footer .copyright p span{
     nav .Buy{
         order: 1;
         margin-right:0;
+        display: none;
     }
     nav .tongge{
         order: 2;
@@ -1145,6 +1425,25 @@ footer .copyright p span{
     }
     header .setting #lock{
         margin-left: 82px;
+    }
+    .container .slide .slide2{
+        display: none;
+    }
+    .container .slide1{
+        max-width: 319px;
+    }
+    .container .slide1 img{
+        height: 235px;
+    }
+    .container .slide1 .abc{
+        left: 164px;
+        top: 73px;
+    }
+    .container .slide .slide3 img{
+        height: 235px;
+    }
+    .container .slide1 #btnshop{
+        height: 35px;
     }
 }
     @media only screen and (max-width: 375px){
@@ -1221,6 +1520,16 @@ footer .copyright p span{
         article .list-view1 .views1{
             max-width: 111px;
         }
+        .container .slide{
+            margin-left: 60px;
+        }
+        .container .slide .slide3 img{
+            height: 236px;
+        }
+        .container .slide .slide3 .slide5 #btnShopnow{
+            width: 90px;
+            height: 33px;
+        }
 }
 @media only screen and (max-width: 320px){
     .container .slide{
@@ -1240,5 +1549,11 @@ footer .copyright p span{
     }   
     footer .copyright p{
         font-size: 13px;
+    }
+    .container .slide1 img{
+        max-width: 291px;
+    }
+    .container .slide{
+        margin-left: 36px;
     }
 }
